@@ -12,6 +12,10 @@ import java.util.HashMap;
 /**
  * Intent Api封装
  * 发送数据采用链式调用
+ *
+ * 不仅仅能传递基本类型数据，数组，序列化数据
+ *
+ * 还支持大数据,文件,图片,甚至控件等
  */
 public class SuperIntent {
     private Intent intent;
@@ -148,10 +152,6 @@ public class SuperIntent {
 
     public void setObjectHashMap(HashMap<String, Object> objectHashMap) {
         this.objectHashMap = objectHashMap;
-    }
-
-    public static void main(String[] args) {
-
     }
 
     public static class Builder{
