@@ -98,8 +98,7 @@ public class SuperIntent {
                 boolean[] value = (boolean[]) obj;
                 intent.putExtra(key,value);
             }
-
-
+            
             //处理ArrayList<String>
             if(stringArrayList != null) {
                 intent.putStringArrayListExtra(stringArrayListKey,stringArrayList);
