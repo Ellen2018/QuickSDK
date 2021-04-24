@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
                         .Builder()
                         .putData("a",1)
                         .putData("b","b")
+                        .putData("c", new int[]{2, 3, 4, 5})
                         .build()
                         .startActivity(MainActivity.this,MainActivity2.class);
             }

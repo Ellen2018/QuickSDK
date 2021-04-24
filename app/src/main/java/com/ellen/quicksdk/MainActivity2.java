@@ -11,6 +11,8 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import java.util.Arrays;
+
 public class MainActivity2 extends AppCompatActivity {
 
     @Override
@@ -32,6 +34,9 @@ public class MainActivity2 extends AppCompatActivity {
 
         String b = getIntent().getStringExtra("b");
         Log.e("Ellen2021","获取key->b的值:"+String.valueOf(b));
+
+        int[] c = getIntent().getIntArrayExtra("c");
+        Log.e("Ellen2021","获取key->c的值:"+ Arrays.toString(c));
     }
 
 }
