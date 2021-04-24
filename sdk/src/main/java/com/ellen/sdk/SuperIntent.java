@@ -98,25 +98,25 @@ public class SuperIntent {
                 boolean[] value = (boolean[]) obj;
                 intent.putExtra(key,value);
             }
-            
-            //处理ArrayList<String>
-            if(stringArrayList != null) {
-                intent.putStringArrayListExtra(stringArrayListKey,stringArrayList);
-            }
-
-            //处理ArrayList<Integer>
-            if(integerArrayList != null){
-                intent.putIntegerArrayListExtra(integerArrayListKey,integerArrayList);
-            }
-
-            //处理ArrayList<Parcelable>
-            if(parcelableArrayList != null) {
-                intent.putParcelableArrayListExtra(parcelableArrayListKey,parcelableArrayList);
-            }
-
-            //启动界面
-            context.startActivity(intent);
         }
+
+        //处理ArrayList<String>
+        if(stringArrayList != null) {
+            intent.putStringArrayListExtra(stringArrayListKey,stringArrayList);
+        }
+
+        //处理ArrayList<Integer>
+        if(integerArrayList != null){
+            intent.putIntegerArrayListExtra(integerArrayListKey,integerArrayList);
+        }
+
+        //处理ArrayList<Parcelable>
+        if(parcelableArrayList != null) {
+            intent.putParcelableArrayListExtra(parcelableArrayListKey,parcelableArrayList);
+        }
+
+        //启动界面
+        context.startActivity(intent);
     }
 
     public String getIntegerArrayListKey() {
